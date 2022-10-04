@@ -12,7 +12,9 @@ Github Actions para ser reutilizado nos projetos que utilizam Terraform, com a f
 
 ## Secrets
 
-Herda a secrets existentes no repositório que utiliza este workflow. A principal função é configurar as variáveis de ambientes necessárias para executar o modulo terraform.
+Para utilização com módulos privados do terraform e necessário criar um personal access token no github podendo seguir esta [doc](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token), apos a criação do token adicione uma nova entrada no secret do seu repositório.
+
+Os secrets serão herdados dos valores existentes no repositório que utiliza este workflow. A principal função é configurar as variáveis de ambientes necessárias para executar o modulo terraform.
 
 ## Utilizando
 Criar a seguintes estrutura de diretórios:
