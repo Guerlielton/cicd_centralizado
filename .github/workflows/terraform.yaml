@@ -61,7 +61,7 @@ jobs:
           terraform_version: ${{ steps.tf-version.outputs.version }}
           
       - name: Download Modulos Privados Terraform 
-        run: git config --global url."https://oauth2:${{ secrets.GH_PERSONAL_TOKEN }}@github.com".insteadOf https://github.com
+        run: git config --global url."https://oauth2:$GH_PERSONAL_TOKEN@github.com".insteadOf https://github.com
 
       - name: Terraform Version
         run: terraform version
