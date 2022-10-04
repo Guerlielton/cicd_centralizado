@@ -42,7 +42,7 @@ jobs:
 
       # É esperado que secrets sejam herdados do repositório que está chamando
       # a pipeline e que esses secrets serão usados para configurar providers
-      # to Terraform usando variáveis de ambiente.
+      # do Terraform usando variáveis de ambiente.
       # Esse step irá export todos os secrets disponíveis como variáveis de
       # ambiente para os passos seguintes.
       - uses: mentoriaiac/secrets-to-env-action@v1
